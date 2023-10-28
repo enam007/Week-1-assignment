@@ -8,7 +8,12 @@
 */
 
 function isAnagram(str1, str2) {
-
+  str1 = str1.replace(/ /g,"").ToLowerCase();
+  str2 = str2.replace(/ /g,"").ToLowerCase();
+ if (str1.length===str2.length){
+   return str1.sort() === str2.sort();
+ }
+ return false;
 }
 
 module.exports = isAnagram;

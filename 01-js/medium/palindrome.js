@@ -7,7 +7,8 @@
 */
 
 function isPalindrome(str) {
-  return true;
+  str = str.ToLowerCase();
+  return str === str.reverse();
 }
 
 module.exports = isPalindrome;
